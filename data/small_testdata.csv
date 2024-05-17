@@ -1,0 +1,6 @@
+SMILES,Adduct,True CCS
+CCC(=O)N(c1ccc(F)cc1)C1CCN(CCc2ccccc2)CC1,[M+H]+,180.1
+CN1C=NC2=C1C(=O)N(C(=O)N2C)C,[M+H]+,200
+COP(=O)(C)OC,[M+H]+,140
+CCOP(=S)(C)O,[M+Na]+,175
+CC(C)OP(=O)(C)F,[M-H]-,150

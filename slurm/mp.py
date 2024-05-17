@@ -171,8 +171,8 @@ def PRE(ID,ccs = None,adduct=None):
         features.append(np.array(iFeatureTmp))
         adj.append(iAdjTmp)
         
-    features = np.asarray(features)
-    edge_features = np.asarray(edge_features)
+    features = np.asarray(features, dtype="object")
+    edge_features = np.asarray(edge_features, dtype="object")
     
     if ccs == None:
         ccs = [0 for i in range(len(adj))]

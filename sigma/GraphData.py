@@ -184,8 +184,8 @@ def convertToGraph(smi_lst,Coordinate,All_Atoms):
         features.append(np.array(iFeatureTmp))
         adj.append(iAdjTmp)
         
-    features = np.asarray(features)
-    edge_features = np.asarray(edge_features)
+    features = np.asarray(features, dtype="object")
+    edge_features = np.asarray(edge_features, dtype="object")
     return adj, features, edge_features
 
 def atom_feature(atom,INDEX,Coordinate,All_Atoms,Atom_radius,Atom_mass):
