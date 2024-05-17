@@ -17,7 +17,7 @@ import time, random
 import sys
 np.set_printoptions(suppress=True)
 
-def Metrics(y,r):
+def Bais(y,r):
     '''
     * The gap between the predicted result and the real value of the evaluation model
     *
@@ -27,7 +27,7 @@ def Metrics(y,r):
     * r : y_pred
     '''
     RelativeError = [abs(y[i]-r[i])/y[i] for i in range(len(y))]
-    R2_Score = r2_score(y,r)
+    R2_Score = r2_score(r,y)
     # print("R2 Score :", R2_Score, '\n')
     # print("Median Relative Error :", np.median(RelativeError) * 100, '%')
     # print("Mean Relative Error :", np.mean(RelativeError) * 100, '%')

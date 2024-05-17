@@ -257,7 +257,7 @@ def edge_feature(iMol):
         Edge_feature.append(bond_feature)
         Edge_feature.append(bond_feature)
     Edge_feature = np.array(Edge_feature)
-    Edge_feature = Edge_feature.astype(np.float)
+    Edge_feature = Edge_feature.astype(np.float64)
     return Edge_feature
         
 class MyDataset(Dataset):
